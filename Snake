@@ -80,7 +80,7 @@ inc_score = 50;
 rand_frog();
 frog++;
 }
-//ctx.fillStyle("#ffffff");
+//ctx.fillStyle("#f70000");
 ctx.fillRect(X * 10, Y * 10, 9, 9);
 map[X][Y] = 2;
 queue.unshift([X, Y]);
@@ -96,7 +96,7 @@ ctx.clearRect(dir[0] * 10, dir[1] * 10, 10, 10);
 else if (!tn.length)
 {
 var msg_score = document.getElementById("msg");
-msg_score.innerHTML = "Thank you for playing game.<br /> Your Score : <b>"+score+"</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
+msg_score.innerHTML = "Sorry, you suck.<br /> Your Score : <b>"+score+"</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
 document.getElementById("playArea").style.display = 'none';
 window.clearInterval(interval);
 }
